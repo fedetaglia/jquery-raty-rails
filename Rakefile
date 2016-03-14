@@ -140,8 +140,8 @@ task :copy_raty do
   minify full_js, min_js
 
 
-  css_file = ASSETS + "stylesheets/jquery-raty.css"
-  cp(css_file, ASSETS + "stylesheets/jquery.raty.css")
+  css_file = DOWNLOAD_DIR + "stylesheets/jquery-raty.css"
+  cp(css_file, ASSETS + "stylesheets/jquery-raty.css")
 end
 
 # Download a URL, handling redirects and SSL.
