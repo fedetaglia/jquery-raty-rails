@@ -138,6 +138,10 @@ task :copy_raty do
 
   min_js = ASSETS + "javascripts/jquery.raty.min.js"
   minify full_js, min_js
+
+
+  css_file = ASSETS + "stylesheets/jquery-raty.css"
+  cp(css_file, ASSETS + "stylesheets/jquery.raty.css")
 end
 
 # Download a URL, handling redirects and SSL.
