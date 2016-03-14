@@ -119,7 +119,7 @@ task :copy_raty do
     mkdir_p ASSETS + d
   end
 
-  Dir.glob(DOWNLOAD_DIR + 'img/*') do |f|
+  Dir.glob(DOWNLOAD_DIR + 'images/*') do |f|
     cp(f, ASSETS + "images/jquery.raty/")
   end
 
